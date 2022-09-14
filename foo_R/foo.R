@@ -5,9 +5,16 @@ volume <- function(r, rho) {
 
 # Function to compute the volumes of the spheres with radius r, r^2 and r^3
 volume_vector <- function(r) {
-  for (e in 1:3) {
-    print(r^e)
+  sphere_volumes <- numeric()
+  
+  for (i in 1:3) {
+    radius = r^i
+    volume = 4/3 * pi * radius^3
+    print(volume)
+    sphere_volumes[i] = volume
   }
+  
+  return (sphere_volumes)
 }
 
 # Radius
