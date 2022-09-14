@@ -20,4 +20,5 @@ volume_vector <- function(r) {
 r <- 2
 
 # Run volume_vector(r) and print the volumes of the spheres with radius r, r^2 and r^3
-volume_vector(r)
+volumes <- volume_vector(r)
+print(volumes)
