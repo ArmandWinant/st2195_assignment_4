@@ -16,11 +16,11 @@ volume_vector <- function(r) {
     
     return (sphere_volumes)
   },
-  error = function(c) "this is an error")
+  error = function(c) "Could not compute the volumes for the given input")
 }
 
 # Radius
-r <- 2
+r <- "abc"
 
 # Run volume_vector(r) and print the volumes of the spheres with radius r, r^2 and r^3
 volumes <- volume_vector(r)
